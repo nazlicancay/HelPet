@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		623D405329B75FD4001E2764 /* VeterinarianModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623D405229B75FD4001E2764 /* VeterinarianModels.swift */; };
+		623DCEF0299A77A1008BBC81 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623DCEEF299A77A1008BBC81 /* LocationViewController.swift */; };
+		62635BC8299A7B1E004BB1BF /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 62635BC7299A7B1E004BB1BF /* MapboxMaps */; };
+		62635BCB299A830B004BB1BF /* MapboxCoreNavigation in Frameworks */ = {isa = PBXBuildFile; productRef = 62635BCA299A830B004BB1BF /* MapboxCoreNavigation */; };
+		62635BCD299A830B004BB1BF /* MapboxNavigation in Frameworks */ = {isa = PBXBuildFile; productRef = 62635BCC299A830B004BB1BF /* MapboxNavigation */; };
+		62731DE429A3B6DE00809E25 /* VeterinarianModels.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 62731DE229A3B6DE00809E25 /* VeterinarianModels.xcdatamodeld */; };
+		62731DE729A3BEFA00809E25 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62731DE629A3BEFA00809E25 /* HomePageViewController.swift */; };
+		62804990296703BB00D4F6C0 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 6280498F296703BB00D4F6C0 /* Lottie */; };
+		628049922967055500D4F6C0 /* 107772-pet-hug.json in Resources */ = {isa = PBXBuildFile; fileRef = 628049912967055500D4F6C0 /* 107772-pet-hug.json */; };
 		62B5659A2964427C00B77417 /* RemindersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B565992964427C00B77417 /* RemindersViewController.swift */; };
 		62B5659D2964545800B77417 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B5659C2964545800B77417 /* PopUpViewController.swift */; };
 		62BA281829226535003E4C3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BA281729226535003E4C3A /* AppDelegate.swift */; };
@@ -37,6 +46,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		623D405229B75FD4001E2764 /* VeterinarianModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeterinarianModels.swift; sourceTree = "<group>"; };
+		623DCEEF299A77A1008BBC81 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		62731DE329A3B6DE00809E25 /* VeterinarianModels.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VeterinarianModels.xcdatamodel; sourceTree = "<group>"; };
+		62731DE629A3BEFA00809E25 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		628049912967055500D4F6C0 /* 107772-pet-hug.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "107772-pet-hug.json"; sourceTree = "<group>"; };
 		62B565992964427C00B77417 /* RemindersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersViewController.swift; sourceTree = "<group>"; };
 		62B5659C2964545800B77417 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		62BA281429226535003E4C3A /* Helpet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Helpet.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +72,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62635BC8299A7B1E004BB1BF /* MapboxMaps in Frameworks */,
+				62635BCB299A830B004BB1BF /* MapboxCoreNavigation in Frameworks */,
+				62804990296703BB00D4F6C0 /* Lottie in Frameworks */,
+				62635BCD299A830B004BB1BF /* MapboxNavigation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,9 +96,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		62731DE529A3BEE700809E25 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				62731DE629A3BEFA00809E25 /* HomePageViewController.swift */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
 		62B565962964423400B77417 /* LocationsPage */ = {
 			isa = PBXGroup;
 			children = (
+				623DCEEF299A77A1008BBC81 /* LocationViewController.swift */,
 			);
 			path = LocationsPage;
 			sourceTree = "<group>";
@@ -110,6 +137,7 @@
 		62BA280B29226535003E4C3A = {
 			isa = PBXGroup;
 			children = (
+				628049912967055500D4F6C0 /* 107772-pet-hug.json */,
 				62BA281629226535003E4C3A /* Helpet */,
 				62BA282D29226536003E4C3A /* HelpetTests */,
 				62BA283729226536003E4C3A /* HelpetUITests */,
@@ -130,6 +158,7 @@
 		62BA281629226535003E4C3A /* Helpet */ = {
 			isa = PBXGroup;
 			children = (
+				62731DE529A3BEE700809E25 /* HomePage */,
 				62B5659B2964544400B77417 /* PopUp */,
 				62B565982964424A00B77417 /* RemindersPage */,
 				62B565972964424200B77417 /* ProfilePage */,
@@ -141,6 +170,8 @@
 				62B5659C2964545800B77417 /* PopUpViewController.swift */,
 				62BA282229226536003E4C3A /* LaunchScreen.storyboard */,
 				62BA282529226536003E4C3A /* Info.plist */,
+				62731DE229A3B6DE00809E25 /* VeterinarianModels.xcdatamodeld */,
+				623D405229B75FD4001E2764 /* VeterinarianModels.swift */,
 			);
 			path = Helpet;
 			sourceTree = "<group>";
@@ -178,6 +209,12 @@
 			dependencies = (
 			);
 			name = Helpet;
+			packageProductDependencies = (
+				6280498F296703BB00D4F6C0 /* Lottie */,
+				62635BC7299A7B1E004BB1BF /* MapboxMaps */,
+				62635BCA299A830B004BB1BF /* MapboxCoreNavigation */,
+				62635BCC299A830B004BB1BF /* MapboxNavigation */,
+			);
 			productName = Helpet;
 			productReference = 62BA281429226535003E4C3A /* Helpet.app */;
 			productType = "com.apple.product-type.application";
@@ -250,6 +287,11 @@
 				Base,
 			);
 			mainGroup = 62BA280B29226535003E4C3A;
+			packageReferences = (
+				6280498E296703BB00D4F6C0 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				62635BC6299A7B1E004BB1BF /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */,
+				62635BC9299A830B004BB1BF /* XCRemoteSwiftPackageReference "mapbox-navigation-ios" */,
+			);
 			productRefGroup = 62BA281529226535003E4C3A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -268,6 +310,7 @@
 			files = (
 				62BA282429226536003E4C3A /* LaunchScreen.storyboard in Resources */,
 				62BA282129226536003E4C3A /* Assets.xcassets in Resources */,
+				628049922967055500D4F6C0 /* 107772-pet-hug.json in Resources */,
 				62BA281F29226535003E4C3A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,10 +336,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				623DCEF0299A77A1008BBC81 /* LocationViewController.swift in Sources */,
+				62731DE729A3BEFA00809E25 /* HomePageViewController.swift in Sources */,
 				62B5659A2964427C00B77417 /* RemindersViewController.swift in Sources */,
 				62BA281829226535003E4C3A /* AppDelegate.swift in Sources */,
 				62BA281A29226535003E4C3A /* SceneDelegate.swift in Sources */,
 				62B5659D2964545800B77417 /* PopUpViewController.swift in Sources */,
+				62731DE429A3B6DE00809E25 /* VeterinarianModels.xcdatamodeld in Sources */,
+				623D405329B75FD4001E2764 /* VeterinarianModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,11 +522,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Helpet/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -502,11 +550,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Helpet/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -632,6 +681,69 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		62635BC6299A7B1E004BB1BF /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mapbox/mapbox-maps-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+		62635BC9299A830B004BB1BF /* XCRemoteSwiftPackageReference "mapbox-navigation-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mapbox/mapbox-navigation-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.10.0;
+			};
+		};
+		6280498E296703BB00D4F6C0 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		62635BC7299A7B1E004BB1BF /* MapboxMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 62635BC6299A7B1E004BB1BF /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */;
+			productName = MapboxMaps;
+		};
+		62635BCA299A830B004BB1BF /* MapboxCoreNavigation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 62635BC9299A830B004BB1BF /* XCRemoteSwiftPackageReference "mapbox-navigation-ios" */;
+			productName = MapboxCoreNavigation;
+		};
+		62635BCC299A830B004BB1BF /* MapboxNavigation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 62635BC9299A830B004BB1BF /* XCRemoteSwiftPackageReference "mapbox-navigation-ios" */;
+			productName = MapboxNavigation;
+		};
+		6280498F296703BB00D4F6C0 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6280498E296703BB00D4F6C0 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		62731DE229A3B6DE00809E25 /* VeterinarianModels.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				62731DE329A3B6DE00809E25 /* VeterinarianModels.xcdatamodel */,
+			);
+			currentVersion = 62731DE329A3B6DE00809E25 /* VeterinarianModels.xcdatamodel */;
+			path = VeterinarianModels.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 62BA280C29226535003E4C3A /* Project object */;
 }
