@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62034EFC2A34E3DC0013CC16 /* PetShopsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62034EFB2A34E3DC0013CC16 /* PetShopsTableViewCell.swift */; };
+		62034EFE2A34E4B80013CC16 /* PetShopsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62034EFD2A34E4B80013CC16 /* PetShopsTableViewController.swift */; };
 		623D405329B75FD4001E2764 /* VeterinarianModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623D405229B75FD4001E2764 /* VeterinarianModels.swift */; };
-		623DCEF0299A77A1008BBC81 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623DCEEF299A77A1008BBC81 /* LocationViewController.swift */; };
 		62635BC8299A7B1E004BB1BF /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 62635BC7299A7B1E004BB1BF /* MapboxMaps */; };
 		62635BCB299A830B004BB1BF /* MapboxCoreNavigation in Frameworks */ = {isa = PBXBuildFile; productRef = 62635BCA299A830B004BB1BF /* MapboxCoreNavigation */; };
 		62635BCD299A830B004BB1BF /* MapboxNavigation in Frameworks */ = {isa = PBXBuildFile; productRef = 62635BCC299A830B004BB1BF /* MapboxNavigation */; };
@@ -16,6 +17,8 @@
 		62731DE729A3BEFA00809E25 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62731DE629A3BEFA00809E25 /* HomePageViewController.swift */; };
 		62804990296703BB00D4F6C0 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 6280498F296703BB00D4F6C0 /* Lottie */; };
 		628049922967055500D4F6C0 /* 107772-pet-hug.json in Resources */ = {isa = PBXBuildFile; fileRef = 628049912967055500D4F6C0 /* 107772-pet-hug.json */; };
+		6284CDC82A29F7E300A3D241 /* sun.json in Resources */ = {isa = PBXBuildFile; fileRef = 6284CDC72A29F7E300A3D241 /* sun.json */; };
+		6284CDCE2A2A0C3000A3D241 /* cloudy.json in Resources */ = {isa = PBXBuildFile; fileRef = 6284CDCD2A2A0C3000A3D241 /* cloudy.json */; };
 		62B5659A2964427C00B77417 /* RemindersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B565992964427C00B77417 /* RemindersViewController.swift */; };
 		62B5659D2964545800B77417 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B5659C2964545800B77417 /* PopUpViewController.swift */; };
 		62BA281829226535003E4C3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BA281729226535003E4C3A /* AppDelegate.swift */; };
@@ -26,6 +29,9 @@
 		62BA282F29226536003E4C3A /* HelpetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BA282E29226536003E4C3A /* HelpetTests.swift */; };
 		62BA283929226536003E4C3A /* HelpetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BA283829226536003E4C3A /* HelpetUITests.swift */; };
 		62BA283B29226536003E4C3A /* HelpetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BA283A29226536003E4C3A /* HelpetUITestsLaunchTests.swift */; };
+		62D7F1552A3319D10061E0EA /* RouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D7F1542A3319D10061E0EA /* RouteViewController.swift */; };
+		62D7F1572A34B2070061E0EA /* LocationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D7F1562A34B2070061E0EA /* LocationsTableViewController.swift */; };
+		62D7F1592A34B7C20061E0EA /* VeterinerianTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D7F1582A34B7C20061E0EA /* VeterinerianTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,11 +52,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		62034EFB2A34E3DC0013CC16 /* PetShopsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetShopsTableViewCell.swift; sourceTree = "<group>"; };
+		62034EFD2A34E4B80013CC16 /* PetShopsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetShopsTableViewController.swift; sourceTree = "<group>"; };
 		623D405229B75FD4001E2764 /* VeterinarianModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeterinarianModels.swift; sourceTree = "<group>"; };
-		623DCEEF299A77A1008BBC81 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		62731DE329A3B6DE00809E25 /* VeterinarianModels.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VeterinarianModels.xcdatamodel; sourceTree = "<group>"; };
 		62731DE629A3BEFA00809E25 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		628049912967055500D4F6C0 /* 107772-pet-hug.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "107772-pet-hug.json"; sourceTree = "<group>"; };
+		6284CDC72A29F7E300A3D241 /* sun.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sun.json; sourceTree = "<group>"; };
+		6284CDCD2A2A0C3000A3D241 /* cloudy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cloudy.json; sourceTree = "<group>"; };
 		62B565992964427C00B77417 /* RemindersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersViewController.swift; sourceTree = "<group>"; };
 		62B5659C2964545800B77417 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		62BA281429226535003E4C3A /* Helpet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Helpet.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +74,9 @@
 		62BA283429226536003E4C3A /* HelpetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelpetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		62BA283829226536003E4C3A /* HelpetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpetUITests.swift; sourceTree = "<group>"; };
 		62BA283A29226536003E4C3A /* HelpetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpetUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		62D7F1542A3319D10061E0EA /* RouteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteViewController.swift; sourceTree = "<group>"; };
+		62D7F1562A34B2070061E0EA /* LocationsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsTableViewController.swift; sourceTree = "<group>"; };
+		62D7F1582A34B7C20061E0EA /* VeterinerianTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeterinerianTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,19 +116,32 @@
 			path = HomePage;
 			sourceTree = "<group>";
 		};
+		6284CDCA2A29F7EF00A3D241 /* animations  */ = {
+			isa = PBXGroup;
+			children = (
+				6284CDCD2A2A0C3000A3D241 /* cloudy.json */,
+				6284CDC72A29F7E300A3D241 /* sun.json */,
+			);
+			name = "animations ";
+			path = "AnimTİONS ";
+			sourceTree = "<group>";
+		};
 		62B565962964423400B77417 /* LocationsPage */ = {
 			isa = PBXGroup;
 			children = (
-				623DCEEF299A77A1008BBC81 /* LocationViewController.swift */,
+				62D7F1562A34B2070061E0EA /* LocationsTableViewController.swift */,
+				62D7F1582A34B7C20061E0EA /* VeterinerianTableViewCell.swift */,
 			);
 			path = LocationsPage;
 			sourceTree = "<group>";
 		};
-		62B565972964424200B77417 /* ProfilePage */ = {
+		62B565972964424200B77417 /* PetShopsPage */ = {
 			isa = PBXGroup;
 			children = (
+				62034EFB2A34E3DC0013CC16 /* PetShopsTableViewCell.swift */,
+				62034EFD2A34E4B80013CC16 /* PetShopsTableViewController.swift */,
 			);
-			path = ProfilePage;
+			path = PetShopsPage;
 			sourceTree = "<group>";
 		};
 		62B565982964424A00B77417 /* RemindersPage */ = {
@@ -158,20 +183,22 @@
 		62BA281629226535003E4C3A /* Helpet */ = {
 			isa = PBXGroup;
 			children = (
+				62D7F1532A3319A90061E0EA /* RoutesPage */,
 				62731DE529A3BEE700809E25 /* HomePage */,
 				62B5659B2964544400B77417 /* PopUp */,
 				62B565982964424A00B77417 /* RemindersPage */,
-				62B565972964424200B77417 /* ProfilePage */,
+				62B565972964424200B77417 /* PetShopsPage */,
 				62B565962964423400B77417 /* LocationsPage */,
 				62BA281729226535003E4C3A /* AppDelegate.swift */,
 				62BA281929226535003E4C3A /* SceneDelegate.swift */,
-				62BA281D29226535003E4C3A /* Main.storyboard */,
 				62BA282029226536003E4C3A /* Assets.xcassets */,
+				62BA281D29226535003E4C3A /* Main.storyboard */,
 				62B5659C2964545800B77417 /* PopUpViewController.swift */,
 				62BA282229226536003E4C3A /* LaunchScreen.storyboard */,
 				62BA282529226536003E4C3A /* Info.plist */,
 				62731DE229A3B6DE00809E25 /* VeterinarianModels.xcdatamodeld */,
 				623D405229B75FD4001E2764 /* VeterinarianModels.swift */,
+				6284CDCA2A29F7EF00A3D241 /* animations  */,
 			);
 			path = Helpet;
 			sourceTree = "<group>";
@@ -191,6 +218,14 @@
 				62BA283A29226536003E4C3A /* HelpetUITestsLaunchTests.swift */,
 			);
 			path = HelpetUITests;
+			sourceTree = "<group>";
+		};
+		62D7F1532A3319A90061E0EA /* RoutesPage */ = {
+			isa = PBXGroup;
+			children = (
+				62D7F1542A3319D10061E0EA /* RouteViewController.swift */,
+			);
+			path = RoutesPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,7 +346,9 @@
 				62BA282429226536003E4C3A /* LaunchScreen.storyboard in Resources */,
 				62BA282129226536003E4C3A /* Assets.xcassets in Resources */,
 				628049922967055500D4F6C0 /* 107772-pet-hug.json in Resources */,
+				6284CDC82A29F7E300A3D241 /* sun.json in Resources */,
 				62BA281F29226535003E4C3A /* Main.storyboard in Resources */,
+				6284CDCE2A2A0C3000A3D241 /* cloudy.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,11 +373,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				623DCEF0299A77A1008BBC81 /* LocationViewController.swift in Sources */,
 				62731DE729A3BEFA00809E25 /* HomePageViewController.swift in Sources */,
+				62D7F1592A34B7C20061E0EA /* VeterinerianTableViewCell.swift in Sources */,
+				62034EFC2A34E3DC0013CC16 /* PetShopsTableViewCell.swift in Sources */,
+				62D7F1552A3319D10061E0EA /* RouteViewController.swift in Sources */,
 				62B5659A2964427C00B77417 /* RemindersViewController.swift in Sources */,
 				62BA281829226535003E4C3A /* AppDelegate.swift in Sources */,
 				62BA281A29226535003E4C3A /* SceneDelegate.swift in Sources */,
+				62034EFE2A34E4B80013CC16 /* PetShopsTableViewController.swift in Sources */,
+				62D7F1572A34B2070061E0EA /* LocationsTableViewController.swift in Sources */,
 				62B5659D2964545800B77417 /* PopUpViewController.swift in Sources */,
 				62731DE429A3B6DE00809E25 /* VeterinarianModels.xcdatamodeld in Sources */,
 				623D405329B75FD4001E2764 /* VeterinarianModels.swift in Sources */,

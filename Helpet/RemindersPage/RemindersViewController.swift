@@ -6,11 +6,17 @@
 //
 
 import UIKit
+import EventKit
+import EventKitUI
 
-class RemindersViewController: UIViewController, UICalendarViewDelegate {
-    
+
+class RemindersViewController: UIViewController, UICalendarViewDelegate,EKEventEditViewDelegate, EKEventViewDelegate {
+   
+   
+    let store = EKEventStore()
     var FoodButoons : [UIButton] = []
     
+    @IBOutlet weak var AddEventBtn: UIButton!
     @IBOutlet weak var foodBtn1: UIButton!
     
     @IBOutlet weak var FoodBtn2: UIButton!
@@ -38,6 +44,36 @@ class RemindersViewController: UIViewController, UICalendarViewDelegate {
         Glass1.setImage(UIImage(named: "GlassFull"), for: .normal)
         popUp(ImageName: "Drinking Cat")
     }
+    
+    @IBAction func DidTapAdd(_ sender: Any) {
+        
+        store.requestAccess(to: .event){ [weak self] success, error in
+            if success, error==nil{
+                DispatchQueue.main.async {
+                    guard let store = self?.store else {return}
+                    
+                    let newEvent = EKEvent(eventStore: store)
+                    newEvent.title = "Bir Hatırlatıcı Oluştur"
+                    newEvent.startDate = Date()
+                    newEvent.endDate = Date()
+                 
+                    let Vc = EKEventEditViewController()
+                    Vc.editViewDelegate = self
+                    Vc.eventStore = store
+                    Vc.event = newEvent
+                    
+                    
+                    
+                    self?.present(Vc, animated: true,completion: nil)
+                    
+                   
+                }
+            }
+            
+        }
+        
+    }
+    
     
     
     @IBAction func Touched(_ sender: Any) {
@@ -70,50 +106,56 @@ class RemindersViewController: UIViewController, UICalendarViewDelegate {
         showAlert.view.addConstraint(width)
         
         showAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
-            // your actions here...
+          
         }))
         self.present(showAlert, animated: true, completion: nil)
         
     }
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         
         FoodButoons.append(foodBtn1)
         FoodButoons.append(FoodBtn2)
         FoodButoons.append(FoodBtn3)
-        CreateCalender()
-
+   
         
         
         
     }
     
-    func CreateCalender(){
-        let CalenderView = UICalendarView()
-        CalenderView.translatesAutoresizingMaskIntoConstraints = false
+    func eventEditViewController(_ controller: EKEventEditViewController, didCompleteWith action: EKEventEditViewAction) {
         
-        CalenderView.calendar = .current
-        CalenderView.locale = .current
-        CalenderView.fontDesign = .rounded
-        CalenderView.delegate = self
-        
-        view.addSubview(CalenderView)
-        
-        NSLayoutConstraint.activate(
-            [CalenderView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
-             CalenderView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
-             CalenderView.heightAnchor.constraint(equalToConstant: 300),
-             CalenderView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor , constant: 400)
-            ])
+        controller.dismiss(animated: true , completion: nil)
     }
+    
+    func eventEditViewControllerDefaultCalendar(forNewEvents controller: EKEventEditViewController) -> EKCalendar {
+        let calendar = controller.eventStore.defaultCalendarForNewEvents!
+           controller.event?.location = "" // Set location to an empty string
+           return calendar
+       }
+
+    
+    func eventViewController(_ controller: EKEventViewController, didCompleteWith action: EKEventViewAction) {
+        if action == .done {
+                if let event = controller.event {
+                    let eventStore = EKEventStore()
+
+                    do {
+                        try eventStore.save(event, span: .thisEvent)
+                        print("Reminder saved successfully!")
+                    } catch {
+                        print("Error saving reminder: \(error.localizedDescription)")
+                    }
+                }
+            }
+
+            controller.dismiss(animated: true, completion: nil)
+    }
+    
     
     
    
 }
 
-extension UICalendarViewDelegate {
-    func calendarView(_ calendarView: UICalendarView, decorationFor dateComponents: DateComponents) -> UICalendarView.Decoration? {
-        nil
-    }
-    
-}
+

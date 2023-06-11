@@ -2,8 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSCalendarsUsageDescription</key>
+	<string>Please allow accsess to calendars  </string>
 	<key>MBXAccessToken</key>
 	<string>pk.eyJ1IjoibmNhbmNheSIsImEiOiJjbGUydXRlZDQwMm0xM3FxamVmYmx4M256In0.2gEdz1CScrpS771uuEXmmg</string>
+	<key>NSRemindersUsageDescription</key>
+	<string>Please allow accsess to reminders </string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
