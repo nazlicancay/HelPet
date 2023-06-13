@@ -39,6 +39,13 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2DK-WE-LxE">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="18"/>
+                            <color key="textColor" systemColor="systemIndigoColor"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="0.0"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="wtp-0V-5pV" kind="relationship" relationship="rootViewController" id="0PT-y9-vvd"/>
@@ -56,6 +63,13 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="A0V-YO-Wb5">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="18"/>
+                            <color key="textColor" systemColor="systemPurpleColor"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="18"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="xHO-WY-P7X" kind="relationship" relationship="rootViewController" id="syb-ba-mf8"/>
@@ -107,23 +121,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SiW-Co-zIy">
-                                <rect key="frame" x="0.0" y="-52" width="393" height="904"/>
+                                <rect key="frame" x="0.0" y="1.3333333333333144" width="393" height="850.66666666666674"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="mmS-XL-13L">
-                                        <rect key="frame" x="8" y="111.33333333333334" width="380" height="200.00000000000003"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="vdw-av-Wew">
+                                        <rect key="frame" x="8" y="413.33333333333337" width="377" height="103.33333333333337"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="DAILY FUN FACTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmq-vd-nsS">
+                                                <rect key="frame" x="0.0" y="0.0" width="377" height="23.666666666666668"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="18"/>
+                                                <color key="textColor" systemColor="systemPurpleColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1DU-lw-54G">
+                                                <rect key="frame" x="0.0" y="83.666666666666629" width="377" height="19.666666666666671"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="mmS-XL-13L">
+                                        <rect key="frame" x="8" y="168.33333333333331" width="380" height="200"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="iKY-TP-r3i">
-                                                <rect key="frame" x="0.0" y="0.0" width="229" height="200"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="225" height="200"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LGg-hG-5Xc">
-                                                        <rect key="frame" x="0.0" y="0.0" width="229" height="156"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="225" height="156"/>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWH-Dp-d8Z">
-                                                        <rect key="frame" x="0.0" y="160" width="229" height="40"/>
+                                                        <rect key="frame" x="0.0" y="160.00000000000006" width="225" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="Xar-e4-EKo"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="18"/>
                                                         <color key="textColor" systemColor="systemPurpleColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -138,38 +169,21 @@
                                                     <constraint firstAttribute="width" constant="150" id="nDf-1m-pID"/>
                                                     <constraint firstAttribute="height" constant="200" id="xA1-5c-OPH"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="18"/>
                                                 <color key="textColor" systemColor="systemPurpleColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="0.19295840231788081" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="116" translatesAutoresizingMaskIntoConstraints="NO" id="vdw-av-Wew">
-                                        <rect key="frame" x="8" y="412" width="377" height="156.66666666666663"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="DAILY FUN FACTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmq-vd-nsS">
-                                                <rect key="frame" x="0.0" y="0.0" width="377" height="20.333333333333332"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                <color key="textColor" systemColor="systemPurpleColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1DU-lw-54G">
-                                                <rect key="frame" x="0.0" y="136.33333333333331" width="377" height="20.333333333333343"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
+                                        <color key="backgroundColor" name="AppColor"/>
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="mmS-XL-13L" firstAttribute="top" secondItem="FVK-aq-XeS" secondAttribute="top" constant="214.33333333333331" id="2AH-Hg-E7s"/>
-                                    <constraint firstAttribute="bottom" secondItem="mmS-XL-13L" secondAttribute="bottom" constant="489.66666666666663" id="ATa-aC-4vK"/>
+                                    <constraint firstItem="mmS-XL-13L" firstAttribute="top" secondItem="FVK-aq-XeS" secondAttribute="top" constant="270" id="2AH-Hg-E7s"/>
+                                    <constraint firstAttribute="bottom" secondItem="mmS-XL-13L" secondAttribute="bottom" constant="436.66666666666674" id="ATa-aC-4vK"/>
                                     <constraint firstItem="mmS-XL-13L" firstAttribute="leading" secondItem="vdw-av-Wew" secondAttribute="leading" id="Bcm-E5-mw8"/>
                                     <constraint firstItem="FVK-aq-XeS" firstAttribute="bottom" secondItem="vdw-av-Wew" secondAttribute="bottom" constant="232.33000000000001" id="CaO-Nf-5cY"/>
                                     <constraint firstAttribute="trailing" secondItem="mmS-XL-13L" secondAttribute="trailing" constant="5" id="GEf-hj-0TM"/>
-                                    <constraint firstItem="vdw-av-Wew" firstAttribute="top" secondItem="mmS-XL-13L" secondAttribute="bottom" constant="100.67" id="fxh-dn-i4k"/>
+                                    <constraint firstItem="vdw-av-Wew" firstAttribute="top" secondItem="mmS-XL-13L" secondAttribute="bottom" constant="45" id="fxh-dn-i4k"/>
                                     <constraint firstItem="FVK-aq-XeS" firstAttribute="trailing" secondItem="vdw-av-Wew" secondAttribute="trailing" constant="8" id="hFM-43-bV0"/>
                                     <constraint firstItem="FVK-aq-XeS" firstAttribute="trailing" secondItem="mmS-XL-13L" secondAttribute="trailing" constant="5" id="oOZ-Dw-M3b"/>
                                     <constraint firstItem="vdw-av-Wew" firstAttribute="leading" secondItem="FVK-aq-XeS" secondAttribute="leading" constant="8" id="rf2-ap-G87"/>
@@ -210,16 +224,16 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="zsh-kP-h4T">
-                                        <rect key="frame" x="-8" y="29.999999999999993" width="393" height="106.33333333333331"/>
+                                        <rect key="frame" x="-8" y="30.000000000000007" width="393" height="108.66666666666669"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Reminder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rbl-k3-s7w">
-                                                <rect key="frame" x="124.33333333333333" y="0.0" width="144.66666666666669" height="26.333333333333332"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                <nil key="textColor"/>
+                                                <rect key="frame" x="125" y="0.0" width="143" height="28.666666666666668"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="22"/>
+                                                <color key="textColor" systemColor="systemPurpleColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="N31-to-kjx">
-                                                <rect key="frame" x="87.666666666666686" y="68.333333333333329" width="218" height="38"/>
+                                                <rect key="frame" x="87.666666666666686" y="70.666666666666671" width="218" height="38"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3FS-Vn-YMT">
                                                         <rect key="frame" x="0.0" y="0.0" width="48" height="38"/>
@@ -256,16 +270,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="wL0-Ak-gUZ">
-                                        <rect key="frame" x="8" y="197" width="369" height="112.33333333333331"/>
+                                        <rect key="frame" x="8" y="199.33333333333334" width="369" height="114.66666666666666"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Water Remeinder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BR8-MB-n2h">
-                                                <rect key="frame" x="102.33333333333333" y="0.0" width="164.33333333333337" height="26.333333333333332"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                <nil key="textColor"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Water Reminder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BR8-MB-n2h">
+                                                <rect key="frame" x="106.66666666666667" y="0.0" width="155.66666666666663" height="28.666666666666668"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="22"/>
+                                                <color key="textColor" systemColor="systemPurpleColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="GeP-AQ-7TK">
-                                                <rect key="frame" x="76.333333333333329" y="74.333333333333314" width="216.33333333333337" height="38"/>
+                                                <rect key="frame" x="76.333333333333329" y="76.666666666666629" width="216.33333333333337" height="38"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OzJ-Ib-3hp">
                                                         <rect key="frame" x="0.0" y="0.0" width="48" height="38"/>
@@ -298,16 +312,15 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hatırlatıcı Ekle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QtD-wb-Qxo">
                                         <rect key="frame" x="55" y="407" width="144" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemPurpleColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fal-2L-hh0">
-                                        <rect key="frame" x="276" y="408" width="47" height="35"/>
+                                        <rect key="frame" x="280" y="411" width="47" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system">
-                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseForegroundColor" systemColor="systemPurpleColor"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="DidTapAdd:" destination="wtp-0V-5pV" eventType="touchUpInside" id="pL3-ea-hsw"/>
@@ -414,22 +427,22 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N7t-Qj-wLF">
                                                     <rect key="frame" x="20" y="11" width="160" height="69"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="15"/>
+                                                    <color key="textColor" systemColor="systemPurpleColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oKv-Ud-ZBk">
                                                     <rect key="frame" x="312.33333333333331" y="11" width="42" height="69"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="15"/>
+                                                    <color key="textColor" systemColor="systemPurpleColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8b-rD-Cs3">
                                                     <rect key="frame" x="204" y="11" width="79" height="69"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="15"/>
+                                                    <color key="textColor" systemColor="systemPurpleColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -489,10 +502,10 @@
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="134"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gW6-ks-qI6">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gW6-ks-qI6">
                                                     <rect key="frame" x="44" y="0.0" width="145" height="134"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="15"/>
+                                                    <color key="textColor" systemColor="systemPurpleColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUi-iM-IIN">
@@ -500,8 +513,8 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="59" id="CD0-64-KR3"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="15"/>
+                                                    <color key="textColor" systemColor="systemPurpleColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Es5-iW-u0F">
@@ -509,8 +522,8 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="LNE-Op-lB8"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="15"/>
+                                                    <color key="textColor" systemColor="systemPurpleColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
